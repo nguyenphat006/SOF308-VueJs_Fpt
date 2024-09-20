@@ -1,6 +1,6 @@
 <template>
     <div class="container mt-5">
-        <h1 class="text-center">Kiến thức sức khỏe cộng đồng</h1>
+        <h1 class="text-center mt-5 mb-5">Hội yêu thích xe Supper Car</h1>
         <div class="row">
             <div class="col-sm-4">
                 <div class="card">
@@ -37,24 +37,24 @@
 </template>
 
 <script setup>
-    import img1 from '../assets/img1.jpg';
-    import img1 from '../assets/img2.jpg';
-    import img1 from '../assets/img3.jpg';
+    import img1 from '../assets/car1.jpg';
+    import img2 from '../assets/car2.jpg';
+    import img3 from '../assets/car1.jpg';
     const items = [
         {
             image: img1,
-            title: 'Bài 1',
-            content: 'Nội dung bài 1'
+            title: 'Ferrari F8 Tributo',
+            content: 'Ferrari F8 Tributo ra mắt vào năm 2019, là cái tên hoàn toàn mới được sử dụng phiên bản nâng cấp của Ferrari 488 GTB. Dù kế thừa 488 GTB nhưng Ferrari F8 Tributo có nhiều sự thay đổi mới mẻ về thiết kế lẫn khả năng vận hành so với người tiền nhiệm.'
         },
         {
             image: img2,
-            title: 'Bài 2',
-            content: 'Nội dung bài 2'
+            title: 'Ferrari spider 488',
+            content: 'Ferrari 488 là một mẫu siêu xe thể thao hạng trung của nhà sản xuất ô tô Ferrari nổi tiếng của Ý. Đây là bản nâng cấp của mẫu xe Ferrari 458 cũ.'
         },
         {
             image: img3,
-            title: 'Bài 3',
-            content: 'Nội dung bài 3'
+            title: 'Ferrari F8 Tributo',
+            content: 'Ferrari F8 Tributo ra mắt vào năm 2019, là cái tên hoàn toàn mới được sử dụng phiên bản nâng cấp của Ferrari 488 GTB. Dù kế thừa 488 GTB nhưng Ferrari F8 Tributo có nhiều sự thay đổi mới mẻ về thiết kế lẫn khả năng vận hành so với người tiền nhiệm.'
         }
     ]
 </script>

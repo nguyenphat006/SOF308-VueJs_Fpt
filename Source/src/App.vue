@@ -10,10 +10,10 @@ import Bai4 from './components/Bai4.vue';
   <!-- <Hello></Hello> -->
 
   <!-- Bài 3 -->
-  <Bai3/> 
+  <!-- <Bai3/>  -->
    
   <!-- Bài 4 -->
-  <!-- <Bai4/> -->
+  <Bai4/>
 
 </template>
 
