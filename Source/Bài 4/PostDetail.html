@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bosstrap.css -->
+    <link rel="stylesheet" href="/Source/css/bootstrap.min.css">
+    <!-- Bosstrap.js -->
+    <script src="/Source/js/bootstrap.bundle.min.js"></script>
+    <title>Lab 3 - Bài 3 - Xây dựng giao diện tương tác BackEnd - Bosstrap 5.3.3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<style>
+    li .nav-link{
+        color: black;
+    }
+    li .nav-link:hover{
+        color: rgb(0, 0, 0);
+    }
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+        color: green;
+    }
+    .rounded-pill{
+        width: 30px;
+    }
+    .card-content img{
+        width: 100%;
+    }
+    .small-blog-post img{
+        height: 80px;
+        width: 100px;
+        padding-right: 10px;                        
+    }
+    .small-blog-post h6{
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .small-blog-post i{
+        color: #ccc;
+    }
+    @media (min-width: 768px){
+        .col-md-5{
+            width: 48% !important;
+        }
+    }
+    .button-random:hover{
+        background-color:   rgba(0, 0, 0, 0.512) !important;
+        color: rgb(255, 255, 255) !important;
+    }
+    .button-random h5:hover{
+        color: black !important;
+    }
+    .active a {
+  color: green;
+  font-weight: bold;
+}
+
+.active a span {
+  position: relative;
+}
+
+.active a span:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: -22px;
+  width: 80px;
+  height: 2px;
+  background-color: green;
+}
+.card.blog {
+    border: 1px solid #ccc;
+    margin: 0 10px 10px 10px; /* Adds spacing on all sides: top, right, bottom, left */
+}
+.media{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.media-body{
+    margin-left: 20px;
+}
+.media img{
+    object-fit: cover;              
+}
+</style>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: azure;">
+        <div class="container">
+            <a class="navbar-brand" href="/Source/Bài 2/index.html">
+                <img src="/Source/images/logo-energy-pilates.png" style="width: 250px;" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href=""><i class="fa-solid fa-list"></i> <span>Bài viết</span></a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><i class="fa-solid fa-film"></i> Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><i class="fa-solid fa-circle-info"></i> Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><i class="fa-solid fa-calendar-days"></i> Sự kiện</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-user"></i> Tài khoản
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Đăng nhập</a></li>
+                            <li><a href="#" class="dropdown-item">Quên mật khẩu</a></li>
+                            <li><a href="#" class="dropdown-item">Đăng ký thành viên</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav d-flex" style="cursor: pointer;">
+                    <li class="nav-item">
+                        <a class="nav-link">Tiếng Việt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Tiếng Anh</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-8">
+              <!-- Post Content -->
+              <h1 class="post-title text-center text-info mb-5">Phương pháp tập luyện pilates hiệu quả !!</h1>
+              <h4 class="post-subtitle mt-3 mb-3">Pilates là gì? tìm hiểu chi tiết về phương pháp luyện tập Pilates</h4>
+              <p>Pilates là một phương pháp luyện tập rèn luyện cơ thể ở cường độ thấp. Tập luyện Pilates thường giúp tăng cường sức mạnh tổng thể của sức khỏe, cơ bắp, cải thiện sự dẻo dai và linh hoạt của cơ thể. Pilates xây dựng các bài tập kết hợp giữa kiểm soát hơi thở và thực hiện các động tác kéo giãn nhẹ tràng, tập trung ở phần lõi của cơ thể. 
+                Phương pháp được đặt tên theo chính người đã phát minh ra hình thức luyện tập này là ông Joseph Pilates. Hiện nay, phương pháp này đã trở nên phổ biến và được rất nhiều người ưa thích lựa chọn rèn luyện hàng ngày. Để tìm hiểu sâu và chi tiết hơn về phương pháp luyện tập Pilates, bạn có thể tham khảo ngay trong bài viết dưới đây. </p>
+                <h4 class="post-subtitle mt-3 mb-3">Loại hình luyện tập Pilates</h4>
+                <img src="/Source/images/tap-pilates1.jpg" alt="" class="img-fluid w-100 mb-3">
+              <p>Phương pháp tập Pilates bao gồm các động tác chậm rãi, nhẹ nhàng, giúp tăng cường cơ bắp, cải thiện độ dẻo dai và giảm đau lưng.</p>
+              <img src="/Source/images/tap-piltes.jpg" alt="" class="img-fluid w-100 mb-3">
+              <p>Phương pháp tập Pilates cũng giúp cải thiện độ dẻo dai, tăng cường sức mạnh, và giảm đau lưng.</p>
+              <p>Ngoài ra, phương pháp tập Pilates còn giúp giảm stress, cải thiện giấc ngủ, và tăng cường hệ miễn dịch.</p>
+              <h4 class="post-subtitle mt-3 mb-3">Lời kết</h4>
+              <p>Pilates là một phương pháp luyện tập hiệu quả và toàn diện, giúp cải thiện sức khỏe, tăng cường cơ bắp, và giảm đau lưng. Với các động tác chậm rãi, nhẹ nhàng, và kiểm soát hơi thở, Pilates là một lựa chọn tuyệt vời cho những người muốn rèn luyện cơ thể và cải thiện sức khỏe. Hãy thử nghiệm phương pháp luyện tập Pilates ngay hôm nay và cảm nhận sự khác biệt!</p>
+            </div>
+            <div class="col-md-4">
+              <!-- Comments -->
+              <h3>Bình luận</h3>
+              <ul>
+                <li>
+                  <p>Hiếu Đạt:</p>
+                  <p>Rất hay và hữu ích !</p>
+                </li>
+                <li>
+                  <p>Sơn Tùng:</p>
+                  <p>Tôi học được rất nhiều kiến thức sau khi đọc được bài này...</p>
+                </li>
+                <li>
+                  <p>Trương Hùng Anh:</p>
+                  <p>Tôi đã đưa cho 1 người bạn mù của tôi đọc bài này và bạn ấy đã hết mù !</p>
+                </li>
+                <!-- Add more comments here -->
+              </ul>
+              <form>
+                <div class="form-group">
+                  <textarea class="form-control" placeholder="Nhập bình luận của bạn"></textarea>
+                </div>
+                <div class="mt-4">
+                  <button type="submit" class="btn btn-primary">Gửi bình luận</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      </div>
+    <div style="height: 130px; margin-top: 30px;">
+    <footer class="bg-dark h-100 d-flex align-items-center justify-content-center" style="color: #fff;"><p>@Copyright by FPT Polytechnic Nguyen Dang Phat</p></footer>
+    </div>
+
+</body>
+</html>
