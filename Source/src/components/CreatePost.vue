@@ -4,7 +4,7 @@
         <input class="mb-2" v-model="title" placeholder="Tiêu đề bài viết">
         <input class="mb-2" v-model="author" placeholder="Tên tác giả">
         <textarea  class="mb-2" v-model="content" placeholder="Nội dung bài viết"></textarea>
-        <button @click="submitPost">Đăng bài</button>
+        <button class="rounded" @click="submitPost">Đăng bài</button>
     </div>
 </template>
 
