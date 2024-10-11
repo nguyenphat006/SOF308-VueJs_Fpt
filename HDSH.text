@@ -2,3 +2,7 @@ Bước 1: Cài đặt package cho vuejs dùng lệnh "npm install" (nhớ để
 Bước 2: Cài Vue-router dùng lệnh "npm install vue-router@next"
 Bước 3: Cài yarn dùng lệnh "npm install --global yarn"
 Bước 4: Dùng lệnh "npm run dev" hoặc "npm run serve" để chạy source
+
+Tài khoản để test isAuthencation phần login
+TK: admin
+MK: password

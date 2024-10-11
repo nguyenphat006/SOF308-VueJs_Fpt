@@ -7,9 +7,10 @@ import Login from '../views/UserLogin.vue'
 import Dashboard from '../views/UserDashboard.vue'
 import UserInfo from '../views/UserInfo.vue'
 import UserSettings from '../views/UserSettings.vue'
+import store from '../router/store.js'
 
 
-const isAuthenticated = false;  // Biến giả lập xác thực
+// const isAuthenticated = false;  // Biến giả lập xác thực
 
 const routes = [
     { path: '/', name: 'Home', component: Home },
@@ -19,8 +20,8 @@ const routes = [
     {
         path: '/dashboard', name: 'Dashboard', component: Dashboard,
         beforeEnter: (to, from, next) => {
-            if (isAuthenticated) next();
-            else next('/login');
+          if (store.state.isAuthenticated) next();
+          else next('/login');
         }
     },
     {
