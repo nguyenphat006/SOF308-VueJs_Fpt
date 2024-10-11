@@ -5,6 +5,9 @@ import BlogPost from '../views/BlogPost.vue'
 import UserProfile from '../views/UserProfile.vue'
 import Login from '../views/UserLogin.vue'
 import Dashboard from '../views/UserDashboard.vue'
+import UserInfo from '../views/UserInfo.vue'
+import UserSettings from '../views/UserSettings.vue'
+
 
 const isAuthenticated = false;  // Biến giả lập xác thực
 
@@ -24,9 +27,15 @@ const routes = [
         path: '/profile',
         component: UserProfile,
         children: [
-            { path: 'info', component: { template: '<div>User Info</div>' } },
-            { path: 'settings', component: { template: '<div>User Settings</div>' } }
-        ]
+            {
+              path: 'info',
+              component: UserInfo
+            },
+            {
+              path: 'settings',
+              component: UserSettings
+            }
+          ]
     },
     { path: '/me', alias: '/profile' }
 ]
